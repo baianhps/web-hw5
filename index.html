@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- 圖片 -->
     <div class="header">
 
         <a class="logo" href="/">
@@ -18,7 +19,7 @@
         <h1>和你一起探索台灣</h1>
 
         <div class="search-bar">
-            <div class="search-flex">
+            <form class="search-flex">
                 <div class="search-col dropdown">
                     <p class="title search-row">地點</p>
                     <p class="content search-row">全台灣</p>
@@ -30,18 +31,575 @@
                 </div>
                 <div class="divider"> </div>
                 <div class="search-col">
-                    <input class="search-text" size="50" type="text" placeholder="試試輸入關鍵字" name="search-text" id="">
+                    <input class="search-text" size="50" type="text" placeholder="試試輸入關鍵字" name="q" id="">
                 </div>
-                <button type="submit" onclick="location.href='/'" class="search-btn">
+                <button type="submit" class="search-btn">
                     <i class="fas fa-search"></i>
                     <span>搜尋</span>
                 </button>
 
-            </div>
+            </form>
         </div>
     </div>
-    <div style="height: 1280px;">
 
+    <!-- 近期活動 -->
+    <div class="list" id="recent-activity">
+        <div class="list-header">
+            <div class="list-title">
+                <div class="icon-list-title"></div>
+                <h3 class="list-title-text">近期活動</h3>
+            </div>
+            <div class="flip">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="list-content">
+
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- 熱門景點 -->
+    <div class="list" id="hot-spot">
+        <div class="list-header">
+            <div class="list-title">
+                <div class="icon-list-title"></div>
+                <h3 class="list-title-text">熱門景點</h3>
+            </div>
+            <div class="flip">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="list-content">
+
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/place.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">九份老街</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>新北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">歷史</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/place.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">九份老街</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>新北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">歷史</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/place.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">九份老街</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>新北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">歷史</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/place.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">九份老街</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>新北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">歷史</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- 熱門活動 -->
+    <div class="list" id="hot-activity">
+        <div class="list-header">
+            <div class="list-title">
+                <div class="icon-list-title"></div>
+                <h3 class="list-title-text">熱門活動</h3>
+            </div>
+            <div class="flip">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="list-content">
+
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/activities.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2021/02/10 ~ 2021/02/28</span>
+                    </div>
+                    <div class="item-title">
+                        <a href="">2021金崙溫泉季聖誕點...</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>宜蘭縣</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">年度活動</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- 熱門城市 -->
+    <div class="list" id="hot-city">
+        <div class="list-header">
+            <div class="list-title">
+                <div class="icon-list-title"></div>
+                <h3 class="list-title-text">熱門城市</h3>
+            </div>
+            <div class="flip">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="list-content">
+
+            <div class="item">
+                <div class="item-header">
+                    <a href="">
+                        <div class="city-image">
+                            <p class="city-name">台北</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href="">
+                        <div class="city-image">
+                            <p class="city-name">台北</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href="">
+                        <div class="city-image">
+                            <p class="city-name">台北</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href="">
+                        <div class="city-image">
+                            <p class="city-name">台北</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- 熱門美食 -->
+    <div class="list" id="hot-food">
+        <div class="list-header">
+            <div class="list-title">
+                <div class="icon-list-title"></div>
+                <h3 class="list-title-text">熱門美食</h3>
+            </div>
+            <div class="flip">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="list-content">
+
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/food.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">海洋城活海鮮餐廳</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">海鮮</a>
+                        <a class="tag" href="">小吃</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/food.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">海洋城活海鮮餐廳</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">海鮮</a>
+                        <a class="tag" href="">小吃</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/food.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">海洋城活海鮮餐廳</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">海鮮</a>
+                        <a class="tag" href="">小吃</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/food.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">海洋城活海鮮餐廳</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">海鮮</a>
+                        <a class="tag" href="">小吃</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+    <!-- 熱門住宿 -->
+    <div class="list" id="hot-hotel">
+        <div class="list-header">
+            <div class="list-title">
+                <div class="icon-list-title"></div>
+                <h3 class="list-title-text">熱門住宿</h3>
+            </div>
+            <div class="flip">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="list-content">
+
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/hotel.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">晶華酒店</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">國際旅宿</a>
+                        <a class="tag" href="">五星級</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/hotel.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">晶華酒店</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">國際旅宿</a>
+                        <a class="tag" href="">五星級</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/hotel.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">晶華酒店</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">國際旅宿</a>
+                        <a class="tag" href="">五星級</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href=""><img src="/media/hotel.png" alt=""></a>
+                </div>
+                <div class="item-content">
+                    <div class="item-title">
+                        <a href="">晶華酒店</a>
+                    </div>
+                    <div class="item-location">
+                        <a href="">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>台北市</span></a>
+                    </div>
+                    <div class="item-tag">
+                        <a class="tag" href="">國際旅宿</a>
+                        <a class="tag" href="">五星級</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>THE Taiwan Copyright © 2021. All Rights Reserved. </p>
     </div>
 </body>
 <script src="javascript/main.js"></script>
