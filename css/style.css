@@ -16,7 +16,7 @@ body {
 .header {
     height: 720px;
     width: auto;
-    background-image: linear-gradient(0deg, rgba(115, 193, 204, 0.1), rgba(115, 193, 204, 0.1)), url(/media/mountain.webp);
+    background-image: linear-gradient(0deg, rgba(115, 193, 204, 0.1), rgba(115, 193, 204, 0.1)), url(media/mountain.webp);
     background-position: center;
     background-size: cover;
     position: relative;
